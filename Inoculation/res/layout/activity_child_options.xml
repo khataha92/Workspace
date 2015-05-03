@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/background"
+    tools:context=".ChildOptions" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/header"
+        android:padding="15dp"
+        android:text="خيارات"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/appointments"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="26dp"
+        android:background="@drawable/art_btn"
+        android:onClick="goToAppointments"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/header"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="24dp"
+        android:text="مشاهدة المواعيد" />
+
+    <Button
+        android:id="@+id/setNextAppointment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/appointments"
+        android:layout_alignRight="@+id/appointments"
+        android:layout_below="@+id/appointments"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/art_btn"
+        android:onClick="setNextAppointment"
+        android:padding="15dp"
+        android:text="تحديد الموعد القادم"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/vaccineRecords"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setNextAppointment"
+        android:layout_alignRight="@+id/setNextAppointment"
+        android:layout_below="@+id/setNextAppointment"
+        android:layout_marginTop="24dp"
+        android:onClick="records"
+        android:background="@drawable/art_btn"
+        android:padding="15dp"
+        android:text="سجل التطعيمات"
+        android:textColor="#ffffff" />
+	
+</RelativeLayout>
